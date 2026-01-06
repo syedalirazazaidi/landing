@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ContactForm from "./components/ContactForm";
+import MarketplaceCapabilities from "./components/MarketplaceCapabilities";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <ContactForm />
+      <MarketplaceCapabilities />
     </main>
   );
 }
