@@ -61,7 +61,7 @@ export default function MarketplaceCapabilities() {
                     {item.title}
                   </h3>
                 </div>
-                <p className="text-sm text-slate-600 mt-0">
+                <p className="text-sm text-slate-600 mt-0 ml-10">
                   {item.description}
                 </p>
 
