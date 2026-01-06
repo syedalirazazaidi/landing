@@ -14,8 +14,14 @@ export default function ContactForm() {
         </button>
       </div>
 
-      <div className="w-full max-w-4xl rounded-[12px] border border-[#E9EAED] bg-white/90 p-8 shadow-[0_40px_80px_rgba(15,23,42,0.12)] backdrop-blur">
-        <form className="space-y-6">
+      <div 
+        className="relative w-full max-w-4xl rounded-lg p-[10px] shadow-sm overflow-hidden"
+        style={{
+          background: 'linear-gradient(180deg, #E9EAED 0%, #E9EAED 30%, rgba(233, 234, 237, 0.7) 50%, rgba(233, 234, 237, 0.4) 70%, rgba(233, 234, 237, 0.15) 85%, transparent 100%)'
+        }}
+      >
+        <div className="rounded-lg bg-white p-8">
+          <form className="space-y-6">
           {/* Name */}
           <div className="space-y-2">
             <label className="block text-sm font-medium text-slate-700">
@@ -60,7 +66,8 @@ export default function ContactForm() {
               Submit
             </button>
           </div>
-        </form>
+          </form>
+        </div>
       </div>
     </section>
   );
