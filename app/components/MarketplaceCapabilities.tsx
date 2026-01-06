@@ -33,28 +33,37 @@ export default function MarketplaceCapabilities() {
           Marketplace Capabilities
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div 
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+       
+        >
           {capabilities.map((item, index) => (
             <div key={index} className="relative">
               <div 
-                className="absolute -inset-3 rounded-lg"
-               
+                className="absolute -inset-4 rounded-lg"
+                style={{
+                  background: 'linear-gradient(135deg, rgba(233, 78, 119, 0.15) 0%, rgba(240, 248, 220, 0.12) 50%, rgba(52, 176, 190, 0.15) 100%)',
+                  filter: 'blur(18px)',
+                  zIndex: 0,
+                }}
               />
-              <div
-                className="rounded-lg flex p-[1px] overflow-hidden relative"
-               
+              <div 
+                className="rounded-lg bg-white p-6 flex flex-col relative" 
+                style={{ 
+                  zIndex: 1,
+                  border: 'none',
+                  outline: 'none',
+                }}
               >
-                <div className="rounded-lg bg-white p-6 flex flex-col">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-8 h-8 bg-[#385090] rounded flex-shrink-0"></div>
                     <h3 className="text-lg font-bold text-slate-900">
                       {item.title}
                     </h3>
                   </div>
-                  <p className="text-sm text-slate-600">
-                    {item.description}
-                  </p>
-                </div>
+                <p className="text-sm text-slate-600">
+                  {item.description}
+                </p>
               </div>
             </div>
           ))}
