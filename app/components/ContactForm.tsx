@@ -14,12 +14,34 @@ export default function ContactForm() {
         </button>
       </div>
 
-      <div 
-        className="relative w-full max-w-4xl rounded-lg p-[10px] shadow-sm overflow-hidden"
-        style={{
-          background: 'linear-gradient(180deg, #E9EAED 0%, #E9EAED 30%, rgba(233, 234, 237, 0.7) 50%, rgba(233, 234, 237, 0.4) 70%, rgba(233, 234, 237, 0.15) 85%, transparent 100%)'
-        }}
-      >
+      <div className="relative w-full max-w-4xl">
+        <div 
+          className="absolute -top-8 -left-8 -right-8 h-40 rounded-lg -z-10"
+          style={{
+            background: 'linear-gradient(90deg, rgba(233, 78, 119, 0.15) 0%, rgba(240, 248, 220, 0.12) 50%, rgba(52, 176, 190, 0.15) 100%)',
+            filter: 'blur(30px)',
+          }}
+        />
+        <div 
+          className="absolute top-0 -left-8 bottom-0 w-32 rounded-lg -z-10"
+          style={{
+            background: 'linear-gradient(180deg, rgba(233, 78, 119, 0.12) 0%, rgba(233, 78, 119, 0.08) 50%, transparent 100%)',
+            filter: 'blur(25px)',
+          }}
+        />
+        <div 
+          className="absolute top-0 -right-8 bottom-0 w-32 rounded-lg -z-10"
+          style={{
+            background: 'linear-gradient(180deg, rgba(52, 176, 190, 0.12) 0%, rgba(52, 176, 190, 0.08) 50%, transparent 100%)',
+            filter: 'blur(25px)',
+          }}
+        />
+        <div 
+          className="relative rounded-lg p-[10px] overflow-hidden"
+          style={{
+            background: 'linear-gradient(180deg, #E9EAED 0%, #E9EAED 30%, rgba(233, 234, 237, 0.7) 50%, rgba(233, 234, 237, 0.4) 70%, rgba(233, 234, 237, 0.15) 85%, transparent 100%)'
+          }}
+        >
         <div className="rounded-lg bg-white p-8">
           <form className="space-y-6">
           {/* Name */}
@@ -67,6 +89,7 @@ export default function ContactForm() {
             </button>
           </div>
           </form>
+        </div>
         </div>
       </div>
     </section>
