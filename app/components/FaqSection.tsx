@@ -38,7 +38,7 @@ export default function FaqSection() {
     <section className="bg-white px-4 pb-20 pt-10">
       <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-2">
         {/* Left column */}
-        <div className="flex flex-col justify-center space-y-4">
+        <div className="flex flex-col  space-y-4">
           <h2 className="text-4xl font-bold leading-tight text-slate-900 md:text-5xl">
             Frequently
             <br />
