@@ -18,16 +18,16 @@ export default function Navbar() {
         </Link>
 
         {/* Links */}
-        <div className="hidden items-center border border-[#E9EAED] rounded-full py-2 px-3 gap-8 text-sm font-medium text-slate-700 md:flex">
-          <button className="hover:text-slate-900">Features</button>
-          <button className="hover:text-slate-900">Solutions</button>
-          <button className="hover:text-slate-900">Testimonials</button>
-          <button className="hover:text-slate-900">Resources</button>
+        <div className="hidden items-center border border-[#E9EAED] bg-[#F7F8FA] rounded-full py-2 px-3 gap-8 text-sm font-medium text-slate-700 md:flex">
+          <button className="hover:text-slate-900 hover:cursor-pointer">Features</button>
+          <button className="hover:text-slate-900 hover:cursor-pointer">Solutions</button>
+          <button className="hover:text-slate-900 hover:cursor-pointer">Testimonials</button>
+          <button className="hover:text-slate-900 hover:cursor-pointer">Resources</button>
         </div>
 
         {/* Right side button */}
         <div className="flex items-center gap-3">
-          <button className="rounded-full border border-[#E9EAED] px-4 py-2 text-sm font-semibold text-black">
+          <button className="rounded-full border border-[#E9EAED] bg-[#F7F8FA] hover:cursor-pointer px-4 py-2 text-sm font-semibold text-black">
             Register Now
           </button>
         </div>
