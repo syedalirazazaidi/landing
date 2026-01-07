@@ -61,7 +61,7 @@ export default function FaqSection() {
             return (
               <div
                 key={item.question}
-                className={`rounded-2xl border border-[#E9EAED] bg-[#F7F8FA] shadow-[0_6px_20px_rgba(0,0,0,0.04)]`}
+                className={`rounded-2xl border border-[#E9EAED]  shadow-[0_6px_20px_rgba(0,0,0,0.04)]`}
               >
                 <button
                   type="button"
@@ -87,7 +87,7 @@ export default function FaqSection() {
                 </button>
 
                 {isOpen && hasAnswer && (
-                  <div className="border-t border-[#E9EAED] px-5 py-4 text-sm text-slate-600">
+                  <div className="border-t border-[#E9EAED]  px-5 py-4 text-sm text-slate-600">
                     {item.answer}
                   </div>
                 )}
