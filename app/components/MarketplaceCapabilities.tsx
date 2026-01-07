@@ -6,23 +6,23 @@ export default function MarketplaceCapabilities() {
     },
     {
       title: "Payout Management",
-      description: "Efficiently manage seller payouts and financial transactions with ease."
+      description: "Efficiently manage seller payouts and financial transactions with ease.transation"
     },
     {
       title: "Seller Management",
-      description: "Comprehensive tools to manage and onboard sellers effectively."
+      description: "Comprehensive tools to manage and onboard sellers effectively.sellers effectively."
     },
     {
       title: "Catalog Control",
-      description: "Take full control of your product catalog and inventory management."
+      description: "Take full control of your product catalog and inventory management.inventory management."
     },
     {
       title: "Local Pickup",
-      description: "Enable local pickup options for your customers with location-based services."
+      description: "Enable local pickup options for your customers with location-based services.location-based services"
     },
     {
       title: "Service Bookings",
-      description: "Manage service appointments and bookings seamlessly."
+      description: "Manage service appointments and bookings seamlessly. bookings seamlessly"
     }
   ];
 
@@ -61,7 +61,7 @@ export default function MarketplaceCapabilities() {
                     {item.title}
                   </h3>
                 </div>
-                <p className="text-sm text-slate-600 mt-0 ml-10">
+                <p className="text-sm text-[#8A8A8A] mt-0 ml-12  tracking-wider">
                   {item.description}
                 </p>
 
